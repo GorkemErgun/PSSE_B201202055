@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
+#include "Addition.h"
 
 int main()
 {
-    std::cout << "Welcome to Calculator\n";
+    std::cout << "Welcome to new Calculator!\n";
+    Addition addition;
+    int number1, number2;
+
+    std::cout << "Input two number to Sum: \n";
+    std::cin >> number1 >> number2;
+    std::cout << "The sum is:" << addition.Sum(number1, number2);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
